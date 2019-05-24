@@ -1,0 +1,68 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  position: relative;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.rotary_control {
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform-origin: 50%;
+  transform: rotate(-135deg);
+  margin-left: 7px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background-color: aqua;
+}
+
+.range {
+  position: absolute;
+  line-height: 30px;
+  padding: 0 5px 0 5px;
+  text-align: center;
+  margin-left: 91px;
+  margin-top: 85px;
+  z-index: 100;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.active {
+  font-size: 20px;
+  color: greenyellow;
+}
