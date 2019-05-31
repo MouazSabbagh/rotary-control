@@ -10,3 +10,8 @@ body {
   background-color: orange;
   position: relative;
 }
+
+rotary-control {
+    width: 60px;
+    height: 60px;
+}

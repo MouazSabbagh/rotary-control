@@ -7,7 +7,7 @@ const assign = Object.assign;
 const defaults = {
     min:        0,
     max:        100,
-    mouserange: 200,
+    mouserange: 240,
     value:      0
 };
 
@@ -123,7 +123,6 @@ element('rotary-control', '#rotary-control-template', {
             }
 
             data.value = value;
-            console.log(data.value);
             renderRotary(data);
         },
 
@@ -146,7 +145,7 @@ element('rotary-control', '#rotary-control-template', {
         const dot  = this.shadowRoot.querySelector(".dot");
         const data = this.data;
 
-        data.$rotary = this.shadowRoot.querySelector(".rotary_control");
+        data.$rotary = this.shadowRoot.querySelector("#rotary-knob");
 
         data.$rotary.addEventListener("mousedown", mouseDown);
 
