@@ -69,3 +69,27 @@
     font-size: 20px;
     color: greenyellow;
 }
+
+.tick-label {
+    font-size: 11px;
+    position: absolute;
+    width: 1.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-left: calc(50% - 0.75rem);
+    margin-top: calc(50% - 0.5rem);
+    text-align: center;
+}
+
+.masked {
+	position: absolute !important;
+	opacity: 0 !important;
+
+	/* Width and height 0 cause browser validation bubbles to dissappear. */
+	width: 1px !important;
+	height: 1px !important;
+}
+
+.masked:checked + .tick-label {
+    color: red;
+}
