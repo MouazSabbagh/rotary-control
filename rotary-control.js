@@ -7,7 +7,7 @@ const assign = Object.assign;
 const defaults = {
     min:        0,
     max:        100,
-    mouserange: 240,
+    mouserange: 320,
     value:      0
 };
 
